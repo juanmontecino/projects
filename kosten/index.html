@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosten viajes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon" href="imagenes/icono/kosten.png" type="image/png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+    <!-- ============================================================================================================================================== -->
+    <!-- navegador -->
+    <!-- ============================================================================================================================================== -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mx-auto text-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <span class="kosten">Kosten</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#nombre_empresa">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#viajes">Viajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#consultas">Consulta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- ============================================================================================================================================== -->
+    <!-- Titulo y presentacion -->
+    <!-- ============================================================================================================================================== -->
+    <div class="container-fluid border-top border-5 pt-3 p-2">
+      <h1 style="color:#9c3d10;" class="text-center" id="nombre_empresa">Kosten</h1>
+      <h2 style="color:#0b5825;" class="text-center" id="nombre_empresa">espacio de viajes</h2>
+      <p class = "mx-auto text-center p-1 mt-2 w-60" id="presentacion"><span class="kosten"> Kosten viajes </span>Explorando el Mundo a tu Estilo
+        Kosten Viajes es mucho más que una agencia de viajes; es tu puerta de entrada a un mundo de experiencias inolvidables.
+        Nos enorgullece llevar el espíritu de la aventura a cada rincón del planeta, ofreciendo viajes diseñados para satisfacer todos los gustos y preferencias.
+        En Kosten Viajes, entendemos que cada viajero es único, con sueños y expectativas distintas.
+        Por eso, nos dedicamos a personalizar cada itinerario, asegurándonos de que tu viaje sea tan único como tú.
+        Colaboramos con los mejores proveedores y destinos para ofrecerte una gama diversa de opciones,
+        desde emocionantes aventuras en la naturaleza hasta lujosos escapes culturales.
+      </p>
+    </div>
+    <!-- ============================================================================================================================================== -->
+    <!-- carrusel -->
+    <!-- ============================================================================================================================================== -->
+
+    <div class="container border-top border-5 pt-3 p-2  w-50" id="carrusel" >
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                      <img src="imagenes/viedma/viedma.jpg" class="d-block w-100" alt="slide1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                      <img src="imagenes/viedma/el_condor.jpg" class="d-block w-100" alt="slide2">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                      <img src="imagenes/viedma/costa_viedma.jpg " class="d-block w-100" alt="slide3">
+                  </div>
+            </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>     
+      </div>
+    </div>
+    <!-- ============================================================================================================================================== -->
+    <!-- seccion viajes exterior -->
+    <!-- ============================================================================================================================================== -->
+    <section class="container-fluid mt-4 p-3 border-top border-5" id="viajes">
+        <h3 id="subtitulo">Viajes al exterior mas vendidos</h3>
+
+        <div id="slider">
+          <div id="slide-track">
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/rio_de_janeiro.jpg" class="card-img-top" alt="Rio de Janeiro,Brasil">
+                    <div class="card-body">
+                      <h5 class="card-title">Rio de Janeiro</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/buzios.png" class="card-img-top" alt="Buzios,Brasil">
+                    <div class="card-body">
+                      <h5 class="card-title">Buzios</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/cuba.jpg" class="card-img-top" alt="Cuba">
+                    <div class="card-body">
+                      <h5 class="card-title">Cuba</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/rep_domi.jpg" class="card-img-top" alt="Republica Dominicana">
+                    <div class="card-body">
+                      <h5 class="card-title">Republica Dominicana</h5>
+                    </div>
+                  </div>
+              </div>
+            
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/rio_de_janeiro.jpg" class="card-img-top" alt="Rio de Janeiro,Brasil">
+                    <div class="card-body">
+                      <h5 class="card-title">Rio de Janeiro</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/buzios.png" class="card-img-top" alt="Buzios,Brasil">
+                    <div class="card-body">
+                      <h5 class="card-title">Buzios</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/cuba.jpg" class="card-img-top" alt="Cuba">
+                    <div class="card-body">
+                      <h5 class="card-title">Cuba</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide" class="m-5">
+                  <div class="card" id="card" style="width: 18rem;">
+                    <img src="imagenes/exterior/rep_domi.jpg" class="card-img-top" alt="Republica Dominicana">
+                    <div class="card-body">
+                      <h5 class="card-title">Republica Dominicana</h5>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </section>
+
+
+    <!-- ============================================================================================================================================== -->
+    <!-- seccion viajes interior -->
+    <!-- ============================================================================================================================================== -->
+    <section class="container-fluid mt-4 p-3 border-top border-5">
+        <h3 id="subtitulo">Viajes al interior mas vendidos</h3>
+
+        <div id="slider2">
+          <div id="slide-track2">
+
+              <div id="slide2" class="m-5">
+                  <div class="card" id="card" style="width: 15rem;">
+                    <img src="imagenes/interior/bariloche.jpg" class="card-img-top" alt="Bariloche,Argentina">
+                    <div class="card-body">
+                      <h5 class="card-title">Bariloche</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide2" class="m-5">
+                  <div class="card" id="card" style="width: 15rem;">
+                    <img src="imagenes/interior/calafate.jpg" class="card-img-top" alt="Calafate,Argentina">
+                    <div class="card-body">
+                      <h5 class="card-title">Calafate</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide2" class="m-5">
+                  <div class="card" id="card" style="width: 15rem;">
+                    <img src="imagenes/interior/jujuy.jpg" class="card-img-top" alt="Jujuy,Argentina">
+                    <div class="card-body">
+                      <h5 class="card-title">Jujuy</h5>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="slide2" class="m-5">
+                  <div class="card" id="card" style="width: 15rem;">
+                    <img src="imagenes/interior/cataratas.jpg" class="card-img-top" alt="Cataratas Del Iguazu,Argentina">
+                    <div class="card-body">
+                      <h5 class="card-title">Cataratas Del Iguazu</h5>
+                    </div>
+                  </div>
+              </div>
+            
+
+              <div id="slide2" class="m-5">
+                <div class="card" id="card" style="width: 15rem;">
+                  <img src="imagenes/interior/ushuaia.png" class="card-img-top" alt="Ushuaia,Argentina">
+                  <div class="card-body">
+                    <h5 class="card-title">Ushuaia</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div id="slide2" class="m-5">
+                <div class="card" id="card" style="width: 15rem;">
+                  <img src="imagenes/interior/bariloche.jpg" class="card-img-top" alt="Bariloche,Argentina">
+                  <div class="card-body">
+                    <h5 class="card-title">Bariloche</h5>
+                  </div>
+                </div>
+            </div>
+
+            <div id="slide2" class="m-5">
+                <div class="card" id="card" style="width: 15rem;">
+                  <img src="imagenes/interior/calafate.jpg" class="card-img-top" alt="Calafate,Argentina">
+                  <div class="card-body">
+                    <h5 class="card-title">Calafate</h5>
+                  </div>
+                </div>
+            </div>
+
+            <div id="slide2" class="m-5">
+                <div class="card" id="card" style="width: 15rem;">
+                  <img src="imagenes/interior/jujuy.jpg" class="card-img-top" alt="Jujuy,Argentina">
+                  <div class="card-body">
+                    <h5 class="card-title">Jujuy</h5>
+                  </div>
+                </div>
+            </div>
+
+            <div id="slide2" class="m-5">
+                <div class="card" id="card" style="width: 15rem;">
+                  <img src="imagenes/interior/cataratas.jpg" class="card-img-top" alt="Cataratas Del Iguazu,Argentina">
+                  <div class="card-body">
+                    <h5 class="card-title">Cataratas Del Iguazu</h5>
+                  </div>
+                </div>
+            </div>
+          
+
+            <div id="slide2" class="m-5">
+              <div class="card" id="card" style="width: 15rem;">
+                <img src="imagenes/interior/ushuaia.png" class="card-img-top" alt="Ushuaia,Argentina">
+                <div class="card-body">
+                  <h5 class="card-title">Ushuaia</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- ============================================================================================================================================== -->
+    <!-- formulario -->
+    <!-- ============================================================================================================================================== -->
+    <div class="mt-4" id="consultas">
+        <form method="post" class="contenedor" id="miFormulario">
+            <div class = "row p-2">
+                <div class="col C">
+                    <div class="mb-3 p-2">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name = "nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="mb-3 p-2">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name = "apellido" placeholder="Ingrese su apellido" required>
+                    </div>
+                    <div class="mb-3 p-2">
+                        <label for="mail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="mail" name = "email" placeholder="Ingrese su email" required>
+                    </div>
+                </div>
+
+                <div class="col p-2">
+                    <div class="mb-3 p-2">
+                        <label for="numero" class="form-label">Número de telefono</label>
+                        <input type="text" class="form-control" id="numero" name = "telefono" placeholder="Ej : 542920202020" required>
+                    </div>
+                    <div class="mb-3 p-2">
+                        <label for="consulta" class="form-label">Consulta:</label>
+                        <textarea class="form-control" id="consulta" name="consulta" rows="3" required></textarea>
+                    </div>
+                </div>
+                <div class="mb-3 text-center">
+                    <button type="submit" class="btn"  name="register">Enviar</button>
+                </div>
+            </div>
+        </form>
+   </div>
+
+    <!-- ============================================================================================================================================== -->
+    <!-- contacto -->
+    <!-- ============================================================================================================================================== -->
+    <section class="container-fluid p-3 fs-5" id="contacto">
+        <h3 id="subtitulo">Encontranos en: </h3>
+        <div class="row">
+            <div class="col mt-4 p-4">
+                <ul>
+                  <li class="m-2"><i class="fab fa-instagram" id="contactos"></i><a href="https://www.instagram.com/kostenviajes/?hl=es-la" target="_blank"> kostenviajes</a></li>
+                
+                  <li class="m-2" ><i class="far fa-envelope" id="contactos"></i> <a href="mailto:ventas@kostenviajes.com.ar"> ventas@kostenviajes.com.ar</a></li>
+              
+                  <li class="m-2"><i class="fas fa-phone" id="contactos"></i><a href="https://api.whatsapp.com/send/?phone=5492920306205&text&type=phone_number&app_absent=0" target="_blank"> +54 2920306205</a></li>
+              
+                  <li class="m-2"><i class="fas fa-map-marker-alt" id="contactos"></i> Alem 8, Viedma, Rio Negro, Argentina</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.752799087348!2d-62.997245724015485!3d-40.81142567137887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95f6980d998ae53f%3A0x46288d30b4cadfe6!2sKosten%20Espacio%20De%20Viajes!5e0!3m2!1ses!2sar!4v1700879650256!5m2!1ses!2sar" width="600px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==============================================================================================================================================-->
+    <!-- pie de pagina -->
+    <!-- ==============================================================================================================================================-->
+    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#9c3d10" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,181.3C640,192,800,160,960,138.7C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+    </footer>
+
+    <!-- ============================================================================================================================================== -->
+    <!-- funcionalidades -->
+    <!-- ============================================================================================================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src = "funcion/funciones.js"></script>
+</body>
+
+</html>

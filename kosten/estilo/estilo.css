@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mandaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mandaic&display=swap');
+
+body{
+    font-family: "Noto Sans Mandaic";
+}
+/*carrusel de fotos*/
+.carousel-inner {
+    max-height: 39rem;
+}
+.carousel-item img {
+    /* height: 400px !important; */
+    max-height: 320px !important;
+    
+}
+/* para la palabra kosten */
+.kosten{
+    font-size: 18px;
+    font-weight: bold;
+    color: #9c3d10;
+}
+/* para pantalla pequeña */
+@media(max-width: 900px) {
+    #presentacion{
+        width: 100%;
+    } 
+
+    #carrusel{
+        width: 100%;
+    }
+    
+    #card{
+        margin: auto;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #contactos{
+        margin: auto;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #subtitulo{
+        margin: auto;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #mapa{
+        width: 100px;
+        height: 50px;
+    }
+}
+/* formulario */
+.contenedor{
+    border: 3px solid #a34809;
+    border-radius: 15px;
+    box-shadow: 40px 40px 40px -40px;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+
+/* boton */
+.contenedor .btn {
+    background-color: #9c3d10; /* Cambia el color a tu preferencia */
+    color: #ffffff; /* Cambia el color del texto a tu preferencia */
+    /* Puedes agregar más estilos según tus necesidades */
+}
+/* subtitulo */
+#subtitulo{
+    color: #9c3d10
+}
+/* mapa */
+#mapa{
+    height: 500px;
+    width: 100%;
+}
+/* kosten */
+#nombre_empresa{
+    font-family: "Averia Serif Libre";
+}
+
+/* ==================================================================================================================== */
+/* slider infinito exterior */
+/* ==================================================================================================================== */
+
+#slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+#slider #slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 8);
+}
+
+#slider #slide {
+    width: 200px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 4));
+        transform: translateX(calc(-200px * 4));
+    }
+}
+
+/* ==================================================================================================================== */
+/* slider infinito interior */
+/* ==================================================================================================================== */
+#slider2 {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+#slider2 #slide-track2 {
+    display: flex;
+    animation: scroll2 40s linear infinite;
+    -webkit-animation: scroll2 40s linear infinite;
+    width: calc(200px * 10);
+}
+
+#slider2 #slide2 {
+    width: 200px;
+}
+
+
+@keyframes scroll2 {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 5));
+        transform: translateX(calc(-200px * 5));
+    }
+}
+
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+
+/*carta*/
+#card{
+    border-color: #9c3d10;
+    border-width:2px;
+}
+/* mensaje de error */
+#mensajeError{
+    color:red;
+}
